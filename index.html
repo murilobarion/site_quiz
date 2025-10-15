@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Quiz interativo HTML</title>
+</head>
+	<body>
+		<header>
+			<!--Header da pagina-->
+			<h1>Quiz interativo para programadores</h1>
+			<p class="paragrafo">Teste seus conhecimentos em programação e veja qual pontuação consegue fazer!</p>
+		</header>
+
+		<main>
+			<!--Seção Sobre-->
+			<section class="sobre">
+				<h2>Sobre o Quiz</h2>
+				<p>Este é um quiz interativo que testa seus <strong><em>conhecimentos em programação</em></strong>. Você terá a chance de responder a perguntas desafiadoras e ver como se sai em comparação com outros programadores!</p>
+				<p>Você encontrará perguntas sobre diversas linguagens de programação, algoritmos e alguns acrônimos como <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, que são fundamentais para o desenvolvimento web.</p>
+				<p>Prepare-se para testar suas habilidades e aprender algo novo!</p>
+				<br>
+				<hr>
+			</section>
+
+			<!--Pergunta 1: Multipla Escolha-->
+			<section>
+				<h2>Qual é a linguagem utilizada para estruturar páginas web?</h2>
+				<form>
+					<input type="radio" value="JavaScript" id="p1a" name="pergunta1">
+					<label for="p1a">JavaScript</label> <br>
+
+					<input type="radio" value="CSS" id="p1b" name="pergunta1">
+					<label for="p1b">CSS</label> <br>
+
+					<input type="radio" value="Python" id="p1c" name="pergunta1">
+					<label for="p1c">Python</label> <br>
+
+					<input type="radio" value="HTML" id="p1d" name="pergunta1">
+					<label for="p1d">HTML</label> <br>
+				</form>
+			</section>
+			<br>
+
+			<!--Pergunta 2: Texto-->
+			<section>
+				<h2>Pergunta 2: Na URL https://www.google.com , o trecho "google.com" é o _______</h2>
+				<form>
+					<input type="text" id="p2" name="pergunta2" placeholder="Escreva sua resposta">
+				</form>
+			</section>
+			<br>
+
+			<!--Pergunta 3: Password-->
+			<section>
+				<h2>Pergunta 3: Escreva um exemplo de senha forte</h2>
+				<form>
+					<input type="password" id="p3" name="pergunta3" placeholder="Digite a senha">
+				</form>
+			</section>
+			<br>
+
+			<!--Pergunta 4: Date-->
+			<section>
+				<h2>Pergunta 4: Em que ano o HTML lançou sua primeira versão?</h2>
+				<form>
+					<input type="date" id="p4" name="pergunta4">
+				</form>
+			</section>
+			<br>
+
+			<!--Pergunta 5: Checkbox-->
+			<section>
+				<h2>Pergunta 5: Quais dessas tecnologias são consideradas linguagens de programação</h2>
+				<form>
+					<input type="checkbox" id="p5a" name="pergunta5" value="Python">
+					<label for="p5a">Python</label> <br>
+
+					<input type="checkbox" id="p5a" name="pergunta5" value="Python">
+					<label for="p5a">HTML</label> <br>
+
+					<input type="checkbox" id="p5a" name="pergunta5" value="Python">
+					<label for="p5a">C#</label> <br>
+
+					<input type="checkbox" id="p5a" name="pergunta5" value="Python">
+					<label for="p5a">Java</label> <br>
+
+					<input type="checkbox" id="p5a" name="pergunta5" value="Python">
+					<label for="p5a">CSS</label> <br>
+				</form>
+			</section>
+			<br>
+
+			<!--Pergunta 6: File-->
+			<section>
+				<h2>Pergunta 6: Faça o upload de um arquivo contendo código HTML</h2>
+				<form>
+					<input type="file" id="p6" name="pergunta6">
+				</form>
+			</section>
+			<br>
+
+			<!--Pergunta 7: Menu Suspenso-->
+			<section>
+				<h2>Pergunta 7: Selecione o atributo do input que define o seu tipo</h2>
+				<form>
+					<select name="pergunta7" id="p7">
+						<option value="id">ID</option>
+						<option value="type">Type</option>
+						<option value="name">Name</option>
+						<option value="placeholder">PlaceHolder</option>
+					</select>
+				</form>
+			</section>
+			<br>
+
+			<!--Pergunta 8: Imagem-->
+			<section>
+				<h2>Pergunta 8: Qual linguagem de programação é representada pelo logotipo abaixo?</h2>
+				<figure>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Logo da linguagem">
+					<figcaption>Logotipo da linguagem de programação</figcaption>
+				</figure> <br> <br>
+
+				<form>
+					<input type="text" id="p8" name="pergunta8" placeholder="Escreva sua resposta">
+				</form>
+			</section>
+			<br>
+			
+			<!--Tabela de pontuação-->
+			<section>
+				<h2>TABELA DE PONTUAÇÃO</h2>
+				<table border="1">
+
+				<thead>
+					<th>Pontuação</th>
+					<th>Avaliação</th>
+				</thead>
+				<tbody>
+
+					<tr>
+						<td>0-2</td>
+						<td>Bem ruim</td>
+					</tr>
+					<tr>
+						<td>3-4</td>
+						<td>Ruim</td>
+					</tr>
+					<tr>
+						<td>5-7</td>
+						<td>Mediano</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>Bom demais</td>
+					</tr>
+				</tbody>
+				
+				<tfoot>
+					<tr>
+						<td colspan="2">Estuda mais ai pra melhora
+
+						</td>
+					</tr> 
+				</tfoot>
+				</table>
+			</section>
+			<br>
+
+			<!--Lista de Resposta-->
+			<section>
+				<h2>Verifique suas respostas</h2>
+				<details>
+					<summary>Clique para ver as respostas</summary>
+					<ol>
+					<li>HTML</li>
+					<li>Domínio</li>
+					<li>Abcd&*12345EUli (exemplo)</li>
+					<li>1991</li>
+					<li>Java, Python, C#</li>
+					<li>Arquivo com extensão em .html</li>
+					<lI>Type</li>
+					<li>Python</li>
+				</ol>
+				</details>
+			</section>
+			<br>
+
+			<!--Formulário do Feedback-->
+			<section>
+				<h2>Nos dê seu Feedback</h2>
+				<form>
+					<fieldset>
+						<legend>Informações de Contatos</legend>
+						<label for="nome">Nome:</label>
+						<input type="text" id="nome" name="nome">
+
+						<br>
+
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email">
+						
+						<br>
+
+						<label for="comentario">Comentários:</label><br>
+						<textarea name="comentario" id="comentario" rows="5" cols="60" placeholder="digite seu comentário"></textarea>
+
+						<br>
+
+						<button onclick="alert('FeedBack enviado')">Envie o seu FeedBack</button>
+					</fieldset>
+				</form>
+			</section>
+
+		</main>
+
+		<footer>
+			<p>Quiz de programadores. &copy Todos os direitos reservados </p>
+			<p>Para conhecer outros quizes <a href="quizes.html" target="_blank">clique aqui</a></p>
+		</footer>
+	</body>
+</html>
